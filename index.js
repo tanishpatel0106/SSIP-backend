@@ -11,7 +11,7 @@ app.use((req,res,next) => {
     next()
 })
 
-app.use('/api', routes)
+app.use('https://ssip-hackathon.azurewebsites.net', routes)
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
